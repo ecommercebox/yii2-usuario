@@ -11,8 +11,8 @@
 
 use dosamigos\selectize\SelectizeDropDownList;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\Html;
+use yii\bootstrap4\ActiveForm;
 
 /**
  * @var $this            yii\web\View

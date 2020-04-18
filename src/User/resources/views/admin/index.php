@@ -10,7 +10,7 @@
  */
 
 use yii\grid\GridView;
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\web\View;
 use yii\widgets\Pjax;
 
@@ -47,7 +47,6 @@ $module = Yii::$app->getModule('user');
                         : $model->registration_ip;
                 },
                 'format' => 'html',
-                'visible' => !$module->disableIpLogging,
             ],
             [
                 'attribute' => 'created_at',
@@ -79,7 +78,6 @@ $module = Yii::$app->getModule('user');
                         : $model->last_login_ip;
                 },
                 'format' => 'html',
-                'visible' => !$module->disableIpLogging,
             ],
             [
                 'header' => Yii::t('usuario', 'Confirmation'),
